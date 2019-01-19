@@ -11,7 +11,7 @@ include Paramable
   @@artists = []
 
   def initialize
-    
+    super
     @songs = []
   end
 
