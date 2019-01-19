@@ -3,7 +3,8 @@ require 'pry'
 class Artist
 extend Memorable
 extend Findable
-extend Paramable
+include Paramable
+
   attr_accessor :name
   attr_reader :songs
 
@@ -31,5 +32,5 @@ extend Paramable
     songs.each { |song| add_song(song) }
   end
 
-  
+
 end
