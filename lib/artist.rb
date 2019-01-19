@@ -6,14 +6,14 @@ extend Memorable
   attr_accessor :name
   attr_reader :songs
 
-  @@artists = []
+  
 
   def initialize
     @@artists << self
     @songs = []
   end
 
-  
+
 
   def self.all
     @@artists
