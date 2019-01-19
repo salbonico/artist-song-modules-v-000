@@ -5,7 +5,7 @@ module Findable
     self.all.detect{|a| a.names == name}
   end
 
-  def find_by_name(song)
+  def find_by_song(song)
     self.all.detect{|a| a.songs == song}
   end
 
